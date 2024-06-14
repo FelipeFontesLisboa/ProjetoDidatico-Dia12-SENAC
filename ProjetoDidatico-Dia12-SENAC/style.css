@@ -1,0 +1,63 @@
+.painel{
+  max-width: 500px;
+  height: 500px;
+  margin: auto;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 2px 2px 20px #000;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#coracao{
+  margin: 10px;
+  width: 190px;
+  transition: ease-in;
+  animation: bounce 2.5s infinite cubic-bezier(.76,.27,.39,.69);
+}
+
+@keyframes bounce{
+  0%{
+      transform: scale(1);
+  }
+
+  50%{
+    transform: scale(1.3);
+  }
+}
+
+@-webkit-keyframes bounce{
+  0%{
+    transform: scale(1);
+}
+  50%{
+  transform: scale(1.3);
+}
+}
+
+body{
+  background-color: rgb(217, 100, 100);
+}
+
+#sim, #nao{
+  height: 40px;
+  width: 60px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  margin-left: -60px;
+  transition: .5s ease-in-out;
+}
+
+#sim:hover{
+  background-color: #f192f1;
+  transform: scale(1.2);
+}
+
+#nao{
+  position: absolute;
+  margin-left: 10px;
+}
